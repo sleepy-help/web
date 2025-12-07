@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="sleepy.help - Your personal sleep companion. Track day and night cycles, optimize your bedtime, and wake up refreshed.">
+    <meta name="theme-color" content="#1a1a2e">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="sleepy.help">
+
+    <title>sleepy.help - sleep better tonight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header role="banner">
+            <h1>sleepy.help</h1>
+            <p class="tagline">find your rhythm, sleep deeply</p>
+        </header>
+
+        <!-- Main Globe Clock -->
+        <main role="main">
+            <section class="clock-container" aria-label="Day and night globe visualization">
+                <canvas id="globe-clock" width="400" height="400" aria-label="Interactive globe showing your position in Earth's day-night cycle"></canvas>
+
+                <!-- Time Display -->
+                <div class="time-display">
+                    <div class="current-time" aria-live="polite">
+                        <span id="current-time-value">--:--</span>
+                        <span class="time-label">now</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sleep Calculator -->
+            <section class="sleep-panel">
+                <div class="card">
+                    <h2>Your Sleep Window</h2>
+
+                    <!-- Wake Time Input -->
+                    <div class="input-group">
+                        <label for="wake-time">When do you need to wake up?</label>
+                        <input
+                            type="time"
+                            id="wake-time"
+                            aria-describedby="wake-time-help"
+                            value="07:00">
+                        <small id="wake-time-help">We'll calculate the optimal bedtime</small>
+                    </div>
+
+                    <!-- Bedtime Recommendation -->
+                    <div class="recommendation" aria-live="polite">
+                        <div class="bedtime-display">
+                            <span class="label">Go to bed at</span>
+                            <span id="bedtime-value" class="bedtime-value">--:--</span>
+                        </div>
+                        <p class="sleep-info">
+                            This gives you <strong id="sleep-cycles">6</strong> complete sleep cycles
+                            (<strong id="sleep-hours">9</strong> hours)
+                        </p>
+                    </div>
+
+                    <!-- Sleep Stats -->
+                    <div class="stats">
+                        <div class="stat" data-status="good">
+                            <span class="stat-label">Sleep Quality</span>
+                            <span class="stat-value">●</span>
+                        </div>
+                        <div class="stat" data-status="good">
+                            <span class="stat-label">Timing</span>
+                            <span class="stat-value">●</span>
+                        </div>
+                        <div class="stat" data-status="good">
+                            <span class="stat-label">Duration</span>
+                            <span class="stat-value">●</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Location Setup -->
+            <section class="location-panel">
+                <div class="card">
+                    <h3>Your Location</h3>
+                    <div class="location-display">
+                        <span id="location-text">Unknown</span>
+                        <button id="location-btn" class="btn-secondary">
+                            📍 Set Location
+                        </button>
+                    </div>
+
+                    <!-- Manual Location Input -->
+                    <div id="manual-location" class="manual-location hidden">
+                        <input
+                            type="text"
+                            id="timezone-input"
+                            placeholder="e.g., America/New_York"
+                            list="timezone-list"
+                            aria-label="Enter your timezone">
+                        <datalist id="timezone-list"></datalist>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer role="contentinfo">
+            <p>
+                <small>Made with care for your sleep. Data stays on your device.</small>
+            </p>
+            <div class="footer-links">
+                <button id="install-btn" class="btn-install hidden">Install App</button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

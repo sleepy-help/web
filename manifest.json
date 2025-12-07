@@ -1,0 +1,31 @@
+{
+  "name": "sleepy.help - Your Sleep Companion",
+  "short_name": "sleepy.help",
+  "description": "Track day and night cycles, optimize your bedtime, and wake up refreshed.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f1e",
+  "theme_color": "#1a1a2e",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["health", "lifestyle", "productivity"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Set Bedtime",
+      "short_name": "Bedtime",
+      "description": "Quickly set your bedtime",
+      "url": "/?action=bedtime",
+      "icons": []
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}
