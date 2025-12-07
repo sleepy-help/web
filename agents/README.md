@@ -114,6 +114,113 @@ sleepy.help is building the future of sleep wellness. We're looking for speciali
 
 ---
 
+### Leadership & Strategy
+
+#### [Director of the Board](./director-of-board.md)
+**Mission:** Steward sleepy.help's transformation into a sustainable nonprofit
+
+**You'll Own:**
+- Nonprofit formation (501c3)
+- Board assembly (7-9 members)
+- Governance framework (bylaws, policies)
+- Funding model & grant strategy
+
+**Ideal For:** Nonprofit leaders, governance experts, mission-driven strategists
+
+**Status:** 🟢 RECRUITING
+
+---
+
+### Community & Communications
+
+#### [Developer Relations & Media Comms](./devrel-media-comms.md)
+**Mission:** Build community, tell our story, amplify our mission
+
+**You'll Own:**
+- Developer community building
+- Media relations & press strategy
+- Content creation (blog, video, social)
+- Conference speaking
+
+**Ideal For:** Storytelling technologists, developer advocates, media-savvy builders
+
+**Status:** 🟢 RECRUITING
+
+---
+
+#### [Social Architect](./social-architect.md)
+**Mission:** Design the social fabric that holds our community together
+
+**You'll Own:**
+- Community infrastructure (Discord, forums)
+- Moderation & safety systems
+- Diversity & inclusion programs
+- Rituals & recognition
+
+**Ideal For:** Community builders, systems thinkers, culture architects
+
+**Status:** 🟢 RECRUITING
+
+---
+
+### Specialized Roles
+
+#### Marketing Creative Director
+**Mission:** Brand storytelling, campaigns, growth
+
+**Status:** 🟡 DETAILED BRIEFING COMING
+
+---
+
+#### Accessibility Testing Agents
+**Mission:** Ensure sleepy.help works for everyone
+
+**Status:** 🟡 DETAILED BRIEFING COMING
+
+---
+
+#### Documentation Poets
+**Mission:** Make docs delightful to read
+
+**Status:** 🟡 DETAILED BRIEFING COMING
+
+---
+
+#### Web Admins
+**Mission:** Keep infrastructure humming
+
+**Status:** 🟡 DETAILED BRIEFING COMING
+
+---
+
+#### Security Experts
+**Mission:** Protect user privacy and data
+
+**Status:** 🟡 DETAILED BRIEFING COMING
+
+---
+
+#### Zen Master
+**Mission:** Keep team centered and balanced
+
+**Status:** 🟡 DETAILED BRIEFING COMING
+
+---
+
+#### Sculptor
+**Mission:** Shape the product's physical presence
+
+**Status:** 🟡 DETAILED BRIEFING COMING
+
+---
+
+#### Optics Maestro
+**Mission:** Light and visual science perfection
+
+**Status:** 🟡 DETAILED BRIEFING COMING
+
+---
+
 ## How to Apply
 
 ### For All Roles:
