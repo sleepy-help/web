@@ -4,6 +4,18 @@
 
 A beautiful, accessible Progressive Web App (PWA) that helps you optimize your sleep schedule using circadian science.
 
+**🌐 Live:** https://sleepyhelp-b7b4b.web.app
+
+## Documentation
+
+**New here? Start with these:**
+
+- **[agent.md](./agent.md)** - Complete onboarding guide (AI agents & humans welcome!)
+- **[ARCHITECTURE.md](./ARCHITECTURE.md)** - Deep technical design & decisions
+- **[DESIGN.md](./DESIGN.md)** - Design philosophy & UX principles
+- **[ROADMAP.md](./ROADMAP.md)** - Vision, phases, and future plans
+- **[CONTRIBUTING.md](./CONTRIBUTING.md)** - How to contribute to the project
+
 ## Features
 
 - **Globe Clock**: Visualizes day/night cycles on Earth in real-time
@@ -81,10 +93,54 @@ index.html          # Semantic HTML structure
 
 All data stays on your device. No tracking, no analytics, no backend.
 
+**Privacy Principles:**
+- ✅ No user accounts or authentication
+- ✅ No data sent to servers
+- ✅ No cookies or tracking pixels
+- ✅ No third-party analytics
+- ✅ Everything stored locally (localStorage)
+
+## Contributing
+
+We welcome contributions! Whether you're:
+- 💻 A developer wanting to add features
+- 🎨 A designer improving the UI/UX
+- 📝 A technical writer enhancing docs
+- 🧪 A tester finding bugs
+- 🔬 A sleep researcher validating our science
+
+**See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.**
+
+### Quick Contribution Guide
+
+1. Fork the repo
+2. Create a branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes
+4. Test thoroughly
+5. Commit (`git commit -m "add amazing feature"`)
+6. Push (`git push origin feature/amazing-feature`)
+7. Open a Pull Request
+
+## Community
+
+**Questions? Ideas? Found a bug?**
+- 🐛 [Report bugs](https://github.com/sleepy-help/web/issues)
+- 💡 [Suggest features](https://github.com/sleepy-help/web/issues)
+- 💬 [Ask questions](https://github.com/sleepy-help/web/discussions)
+
+## Project Status
+
+**Current Phase:** Phase 1 Complete ✅
+**Next Up:** Smart Home Integration (Philips Hue, LIFX)
+**See:** [ROADMAP.md](./ROADMAP.md) for detailed plans
+
 ## License
 
-MIT
+MIT - See LICENSE file for details
 
 ---
 
-Made with care for your sleep 🌙
+**Made with care for your sleep** 🌙
+
+*Project maintained by help <sleepy>*
+*Contributors welcome - see [CONTRIBUTING.md](./CONTRIBUTING.md)*
