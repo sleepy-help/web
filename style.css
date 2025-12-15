@@ -529,6 +529,48 @@ footer {
     }
 }
 
+/* Toast Notifications (Success, Info, Warning) - Phase 2 */
+.toast {
+    position: fixed;
+    bottom: var(--space-xl);
+    right: var(--space-xl);
+    max-width: 350px;
+    padding: var(--space-md) var(--space-lg);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+    animation: slideIn 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.toast--success {
+    background: var(--color-good);
+    color: #0a1a2a;
+}
+
+.toast--info {
+    background: var(--color-primary);
+    color: white;
+}
+
+.toast--warning {
+    background: var(--color-warning);
+    color: #0a1a2a;
+}
+
+.toast--hiding {
+    animation: slideOut 0.3s ease;
+}
+
+@media (max-width: 767px) {
+    .toast {
+        bottom: var(--space-md);
+        right: var(--space-md);
+        left: var(--space-md);
+        max-width: none;
+    }
+}
+
 /* Print styles */
 @media print {
     body {
@@ -537,7 +579,8 @@ footer {
     }
     .btn-install,
     footer,
-    .error-toast {
+    .error-toast,
+    .toast {
         display: none;
     }
 }

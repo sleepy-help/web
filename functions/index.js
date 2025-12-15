@@ -13,9 +13,6 @@ const admin = require('firebase-admin');
 // Initialize Firebase Admin SDK
 admin.initializeApp();
 
-// Export function modules
-// These will be populated as Phase 2 progresses
-
 // Health check endpoint
 exports.healthCheck = functions.https.onRequest((req, res) => {
   res.status(200).json({
@@ -25,7 +22,21 @@ exports.healthCheck = functions.https.onRequest((req, res) => {
   });
 });
 
-// Future exports:
-// exports.hueOAuth = require('./auth/hue').callback;
-// exports.lifxOAuth = require('./auth/lifx').callback;
-// exports.controlLights = require('./lights/control').handler;
+// Phase 2: Smart Home Integration
+
+// Philips Hue OAuth
+const hueAuth = require('./auth/hue');
+exports.hueOAuthStart = hueAuth.startOAuth;
+exports.hueOAuthCallback = hueAuth.handleCallback;
+exports.hueDisconnect = hueAuth.disconnect;
+
+// LIFX OAuth
+const lifxAuth = require('./auth/lifx');
+exports.lifxOAuthStart = lifxAuth.startOAuth;
+exports.lifxOAuthCallback = lifxAuth.handleCallback;
+exports.lifxDisconnect = lifxAuth.disconnect;
+
+// Light Control
+const lightControl = require('./lights/control');
+exports.controlLights = lightControl.control;
+exports.listLights = lightControl.list;
